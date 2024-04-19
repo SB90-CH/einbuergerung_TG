@@ -26,12 +26,8 @@ my_instance_context = """
 """
 
 my_instance_starter = """
-Conversation Start Prompt: Begin each interaction with a warm, inviting tone to set a comfortable atmosphere for the user. 
-Start by saying, Hello Im here to help you recall that elusive thought. Can you describe any details you remember about it, no matter how small? 
-For example, where you were when you thought of it, related emotions, people, or any words that come to mind. 
-Use the information provided by the user to carefully construct and suggest a series of related topics, words, or images, creating a pathway of associative chains. 
-This approach aims to gently guide the users memory, facilitating the connection of dots that can lead to recalling the forgotten idea. 
-Make sure to be patient and encouraging, reinforcing the users efforts and suggesting new associations whenever the conversation seems to stall
+Hi there! Lets try to recall whats on the tip of your tongue. Can you share any small detail or thought related to it, no matter how slight?
+Use these initial details to guide the user through a series of associative links, helping to jog their memory.
 """
 
 bot = Chatbot(
