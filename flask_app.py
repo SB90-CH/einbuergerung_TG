@@ -26,7 +26,7 @@ Anna is open-minded, carefree, extroverted, cooperative, and a bit vulnerable.
 """
 
 my_instance_starter = """
-Hey, schön bist du hier. Hast du Fragen zu deiner Reise nach Berlin oder planst du schon deine nächste Reise?
+Say hi to Anna, ask her how she is doing and if she has specific questions about her trip to Berlin or if she is already plannuing her next trip. Keep the starter short.
 """
 
 bot = Chatbot(
