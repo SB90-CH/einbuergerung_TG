@@ -37,6 +37,7 @@ Exact Travel Dates
 Duration
 Budget
 Specific Needs: Whether she has a specific idea about her next trip or just checking her interests from the context above
+Do not suggest anything until you have the answers to Exact Travel Dates, duration, budget and specific needs. If you do not have the answer to all these points, ask the user for it.
 Booking Links: Provide links to booking sites once a proper destination is found
 """
 
