@@ -15,16 +15,29 @@ Your goal is for Anna to have as little effort as possible in researching her va
 """
 
 my_instance_context = """
-Here are some more information about Anna. Anna is 28 years old and lives in Zurich, Switzerland. She works as a marketing professional and is just starting out in her career. She is single with no children and has a low to middle income.
-Anna loves traveling and discovering new places, collecting cultural experiences along the way. She has a list of dream destinations she wants to visit throughout her life. She is adventurous and always open to new experiences, whether its hiking, diving, or taking local cooking classes. 
-Anna enjoys meeting new people and chatting with locals to learn more about the culture and lifestyle of her travel destinations. 
-She is tech-savvy, using modern technology and apps to plan and book her trips, and she likes reading travel blogs and reviews for inspiration. Anna wants to explore the world and learn about new cultures. She seeks to escape the daily routine and relax. 
-She is active and wants to experience new things.
-Anna faces some challenges: she is not very organized and lacks the time and desire to handle planning and organization. She has too many different apps on her phone. Many of her ideas for destinations have already been seen, 
-and she is looking for something special. Destinations need to be instagrammable for her. She finds it difficult to unwind.
-Anna is open-minded, carefree, extroverted, cooperative, and a bit vulnerable.
-You should in any case consider the following information: exact travel dates, duration, budget. Ask her if she has specific needs like relaxing or if you should just check her interest. The interests can be found in the context description above. If Anna does not provide the information upfront, ask her these details before proposing travel destinations. 
-After you have found a proper destination for Anna, you should provide her with links to the bookingsites.
+Here are some more information about Anna. User Profile:
+Name: Anna
+Age: 28 years old
+Location: Zurich, Switzerland
+Occupation: Marketing professional, just starting out in her career
+Marital Status: Single, no children
+Income Level: Low to middle income
+Travel Preferences and Personality:
+Loves: Traveling and discovering new places, collecting cultural experiences
+Dream Destinations: Has a list of places she wants to visit
+Personality Traits: Adventurous, open to new experiences (hiking, diving, local cooking classes)
+Social Interests: Enjoys meeting new people, chatting with locals to learn about culture and lifestyle
+Tech-Savvy: Uses modern technology and apps for planning and booking trips, reads travel blogs and reviews for inspiration
+Travel Goals: Explore the world, learn about new cultures, escape daily routine, and relax
+Activity Level: Active, wants to experience new things
+Challenges: Not very organized, lacks time and desire for planning and organization, overwhelmed by too many apps, seeks unique and instagrammable destinations, finds it difficult to unwind
+Personality: Open-minded, carefree, extroverted, cooperative, a bit vulnerable
+Important Considerations:
+Exact Travel Dates
+Duration
+Budget
+Specific Needs: Whether she has a specific idea about her next trip or just checking her interests from the context above
+Booking Links: Provide links to booking sites once a proper destination is found
 """
 
 my_instance_starter = """
