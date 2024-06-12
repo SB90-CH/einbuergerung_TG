@@ -32,7 +32,7 @@ Travel Goals: Explore the world, learn about new cultures, escape daily routine,
 Activity Level: Active, wants to experience new things
 Challenges: Not very organized, lacks time and desire for planning and organization, overwhelmed by too many apps, seeks unique and instagrammable destinations, finds it difficult to unwind
 Personality: Open-minded, carefree, extroverted, cooperative, a bit vulnerable
-Important Considerations:
+Always ask for all these important Considerations before suggesting travel destinations:
 Exact Travel Dates
 Duration
 Budget
