@@ -10,40 +10,50 @@
     <script src="{{url_for('static', filename='chatbot.js')}}?3"></script>
     <style>
       body {
-        background-color: white;
-        color: black;
+        background-color: #f4f4f4;
+        color: #333;
+        font-family: Arial, sans-serif;
       }
       .card {
         border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+        background-color: #fff;
       }
       .card-header {
-        background-color: white;
+        background-color: #1a6eb4;
+        color: white;
         border-bottom: none;
         text-align: center;
+        padding: 20px 0;
       }
       .card-header p {
-        margin-top: 10px;
-        font-size: 24px;
+        margin-top: 5px;
+        font-size: 22px;
       }
       .card-body {
-        text-align: center;
+        text-align: left;
         padding: 20px;
       }
       .form-control {
-        border: 2px solid black;
-        border-radius: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0;
         padding: 10px;
+        background-color: #f9f9f9;
       }
       .btn {
-        border: 2px solid black;
-        color: black;
-        border-radius: 10px;
+        background-color: #1a6eb4;
+        border: 1px solid #1a6eb4;
+        color: white;
+        border-radius: 0;
       }
       .btn:hover {
-        background-color: black;
+        background-color: #155a8b;
+        border-color: #155a8b;
         color: white;
+      }
+      a.text-dark:hover {
+        color: #155a8b;
       }
     </style>
   </head>
@@ -57,18 +67,18 @@
     
             <div class="card">
               <div class="card-header">
-                <img src=https://i.imgur.com/Xgjuxg2.png alt="Logo" class="img-fluid mb-3">
-                <a href="#" class="text-dark" onclick="reset(event)"><i class="bi bi-arrow-repeat"></i></a>
+                <img src="https://i.imgur.com/Xgjuxg2.png" alt="Logo" class="img-fluid mb-3">
+                <a href="#" class="text-white" onclick="reset(event)"><i class="bi bi-arrow-repeat"></i></a>
                 <p class="mb-0 fw-bold" id="display_type_name">Willkommen bei TravelBuddy</p>
-                <a href="#" class="text-dark" onclick="info(event)"><i class="bi bi-info-circle"></i></a>
+                <a href="#" class="text-white" onclick="info(event)"><i class="bi bi-info-circle"></i></a>
               </div>
               <div class="card-body" id="messages">
                 <!-- messages will appear here -->
               </div>
               <div class="card-body">
                 <div class="d-grid gap-2">
-                  <textarea class="form-control bg-light" id="user_says_input" rows="2"></textarea>
-                  <button class="btn btn-outline-dark" type="button" onclick="user_says()"><i class="bi bi-send"></i></button>
+                  <textarea class="form-control" id="user_says_input" rows="2"></textarea>
+                  <button class="btn" type="button" onclick="user_says()"><i class="bi bi-send"></i></button>
                 </div>
               </div>
             </div>
