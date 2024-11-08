@@ -1,9 +1,0 @@
-TODO
-- Auto Deployment (WebHook)
-- WebHook auf Flask Seite verwenden für Pull, Reload
-- Open AI Key
-
-Quellen
-https://medium.com/@aadibajpai/deploying-to-pythonanywhere-via-github-6f967956e664
-
-http://localhost:5000/c48a13d7/fe6d944d/chat
