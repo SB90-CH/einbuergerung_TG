@@ -30,6 +30,9 @@ $(document).ready(function () {
 function session_from_url() {
     let path = window.location.pathname;
     path_elements = path.split("/");
+    if (path_elements[1] === "anna") {
+        path_elements[1] = "einburgerung"; // Replace "anna" with "einburgerung"
+    }
     return new Session(path_elements[1], path_elements[2]);
 }
 
