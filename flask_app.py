@@ -76,8 +76,8 @@ def get_first_pdf():
 
     return "No PDF file found in the root folder."
 
-@app.route("/chat")
-def chatbot():
+@app.route("/<type_id>/<user_id>/chat")
+def chatbot(type_id: str, user_id: str):
     return render_template("chat.html")
 
 
