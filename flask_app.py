@@ -49,8 +49,8 @@ Say hi to Anna, ask her how she is doing and if she has specific questions about
 bot = Chatbot(
     database_file="database/chatbot.db", 
     type_id="coach",
-    user_id="daniel",
-    type_name="TravelBuddy - Wie kann ich dir helfen?",
+    user_id="einbuergerung",
+    type_name="Haerzlich willkomme im Turgau",
     type_role=my_type_role,
     instance_context=my_instance_context,
     instance_starter=my_instance_starter
