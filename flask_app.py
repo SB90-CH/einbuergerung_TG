@@ -46,6 +46,10 @@ my_instance_starter = """
 Say hi to Anna, ask her how she is doing and if she has specific questions about her trip to Berlin or if she is already plannuing her next trip. Keep the starter short. Please approach her in German.
 """
 
+def resolve_type_id(type_id: str) -> str:
+    """Helper function to replace 'anna' with 'einburgerung'."""
+    return "einburgerung" if type_id == "anna" else type_id
+
 bot = Chatbot(
     database_file="database/chatbot.db", 
     type_id="coach",
@@ -78,11 +82,12 @@ def get_first_pdf():
 
 @app.route("/<type_id>/<user_id>/chat")
 def chatbot(type_id: str, user_id: str):
+    type_id = resolve_type_id(type_id)
     return render_template("chat.html")
-
 
 @app.route("/<type_id>/<user_id>/info")
 def info_retrieve(type_id: str, user_id: str):
+    type_id = resolve_type_id(type_id)
     bot: Chatbot = Chatbot(
         database_file="database/chatbot.db",
         type_id=type_id,
@@ -91,9 +96,9 @@ def info_retrieve(type_id: str, user_id: str):
     response: dict[str, str] = bot.info_retrieve()
     return jsonify(response)
 
-
 @app.route("/<type_id>/<user_id>/conversation")
 def conversation_retrieve(type_id: str, user_id: str):
+    type_id = resolve_type_id(type_id)
     bot: Chatbot = Chatbot(
         database_file="database/chatbot.db",
         type_id=type_id,
@@ -102,16 +107,10 @@ def conversation_retrieve(type_id: str, user_id: str):
     response: list[dict[str, str]] = bot.conversation_retrieve()
     return jsonify(response)
 
-
 @app.route("/<type_id>/<user_id>/response_for", methods=["POST"])
 def response_for(type_id: str, user_id: str):
-    user_says = None
-    # content_type = request.headers.get('Content-Type')
-    # if (content_type == 'application/json; charset=utf-8'):
+    type_id = resolve_type_id(type_id)
     user_says = request.json
-    # else:
-    #    return jsonify('/response_for request must have content_type == application/json')
-
     bot: Chatbot = Chatbot(
         database_file="database/chatbot.db",
         type_id=type_id,
@@ -124,9 +123,9 @@ def response_for(type_id: str, user_id: str):
     }
     return jsonify(response)
 
-
 @app.route("/<type_id>/<user_id>/reset", methods=["DELETE"])
 def reset(type_id: str, user_id: str):
+    type_id = resolve_type_id(type_id)
     bot: Chatbot = Chatbot(
         database_file="database/chatbot.db",
         type_id=type_id,
