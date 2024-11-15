@@ -29,9 +29,9 @@ $(document).ready(function () {
 
 function session_from_url() {
     let path = window.location.pathname;
-    path_elements = path.split("/");
-    path_elements[1] = "einburgerung"; // Force "einburgerung" as the path segment
-    return new Session(path_elements[1], path_elements[2]);
+    let path_elements = path.split("/");
+    let type_id = path_elements[2] === "anna" ? "einburgerung" : path_elements[2];
+    return new Session(type_id, path_elements[3]);
 }
 
 function reset_conversation_view() {
