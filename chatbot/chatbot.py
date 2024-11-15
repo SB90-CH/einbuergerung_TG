@@ -57,6 +57,9 @@ class Chatbot:
                 "if any of instance configuration is provided, then all of instance configurations must be provided"
             )
 
+        if type_id == "anna":
+    type_id = "einburgerung"
+
         self._persistence: Persistence = Persistence(
             database=database_file,
             type_id=type_id,
